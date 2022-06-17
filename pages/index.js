@@ -1,34 +1,55 @@
 import React from "react";
-import HeadComponent from '../components/Head';
+import HeadComponent from "../components/Head";
 
 // Constants
-const TWITTER_HANDLE = "_buildspace";
-const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+const BUILDSPACE_TWITTER_HANDLE = "_buildspace";
+const BUILDSPACE_TWITTER_LINK = `https://twitter.com/${BUILDSPACE_TWITTER_HANDLE}`;
+
+const MY_TWITTER_HANDLE = "DeeMaejor";
+const MY_TWITTER_LINK = `https://twitter.com/${MY_TWITTER_HANDLE}`;
 
 const App = () => {
-  
-  
   return (
     <div className="App">
-      <HeadComponent/>
+      <HeadComponent />
       <div className="container">
         <header className="header-container">
-          <p className="header"> 😳 Buildspace Emoji Store 😈</p>
-          <p className="sub-text">The only emoji store that accepts sh*tcoins</p>
+          <p className="header">Bobo-jama Store 😀</p>
+          <p className="sub-text">
+            Your store for all framed artworks and other accessories
+          </p>
         </header>
 
         <main>
-          <img src="https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif" alt="emoji" />
+          <div className="image-panel">
+            <div className="image-frame">
+              <img
+                src="/images/chico-code.jpeg"
+                alt="chico-code-pic"
+                className="image"
+              />
+            </div>
+          </div>
         </main>
 
         <div className="footer-container">
-          <img alt="Twitter Logo" className="twitter-logo" src="twitter-logo.svg" />
+          <img
+            alt="Twitter Logo"
+            className="twitter-logo"
+            src="twitter-logo.svg"
+          />
           <a
             className="footer-text"
-            href={TWITTER_LINK}
+            href={BUILDSPACE_TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+          >{`built on @${BUILDSPACE_TWITTER_HANDLE}`}</a>
+          <a
+            className="footer-text-2"
+            href={MY_TWITTER_LINK}
+            target="_blank"
+            rel="noreferrer"
+          >{`and shipped by @${MY_TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>
